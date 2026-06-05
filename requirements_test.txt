@@ -1,2 +1,5 @@
 pytest-homeassistant-custom-component==0.13.205
 aioresponses>=0.7.6
+# ZeroconfServiceInfo lives in homeassistant.components.zeroconf on this HA
+# version, which imports the zeroconf library. Pin matches HA's constraint.
+zeroconf==0.136.2
