@@ -1,0 +1,21 @@
+{
+  "entity": {
+    "sensor": {
+      "total_power_import_kwh": { "default": "mdi:transmission-tower-export" },
+      "total_power_import_t1_kwh": { "default": "mdi:transmission-tower-export" },
+      "total_power_import_t2_kwh": { "default": "mdi:transmission-tower-export" },
+      "total_power_export_kwh": { "default": "mdi:transmission-tower-import" },
+      "total_power_export_t1_kwh": { "default": "mdi:transmission-tower-import" },
+      "total_power_export_t2_kwh": { "default": "mdi:transmission-tower-import" },
+      "active_tariff": { "default": "mdi:theme-light-dark" },
+      "wifi_strength": { "default": "mdi:wifi" },
+      "wifi_ssid": { "default": "mdi:wifi-settings" },
+      "meter_model": { "default": "mdi:meter-electric" },
+      "smr_version": { "default": "mdi:numeric" },
+      "gas_timestamp": { "default": "mdi:clock-outline" }
+    },
+    "button": {
+      "identify": { "default": "mdi:lightbulb-on" }
+    }
+  }
+}
