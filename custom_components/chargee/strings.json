@@ -1,0 +1,64 @@
+{
+  "config": {
+    "flow_title": "{name}",
+    "step": {
+      "user": {
+        "title": "Connect to your Chargee P1",
+        "description": "Enter the IP address of your Sparky or Flint. The local API must be enabled in the Chargee app (Profile -> Address -> My House -> Local API).",
+        "data": {
+          "host": "IP address",
+          "port": "Port"
+        }
+      },
+      "discovery_confirm": {
+        "title": "Set up Chargee P1",
+        "description": "Do you want to set up {name}?"
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect. Check the IP address and that the local API is enabled.",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This device is already configured.",
+      "no_serial": "The discovered device did not report a serial number."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "total_power_import_kwh": { "name": "Energy import" },
+      "total_power_import_t1_kwh": { "name": "Energy import tariff 1" },
+      "total_power_import_t2_kwh": { "name": "Energy import tariff 2" },
+      "total_power_export_kwh": { "name": "Energy export" },
+      "total_power_export_t1_kwh": { "name": "Energy export tariff 1" },
+      "total_power_export_t2_kwh": { "name": "Energy export tariff 2" },
+      "active_power_w": { "name": "Active power" },
+      "active_power_l1_w": { "name": "Active power phase 1" },
+      "active_power_l2_w": { "name": "Active power phase 2" },
+      "active_power_l3_w": { "name": "Active power phase 3" },
+      "active_voltage_l1_v": { "name": "Voltage phase 1" },
+      "active_voltage_l2_v": { "name": "Voltage phase 2" },
+      "active_voltage_l3_v": { "name": "Voltage phase 3" },
+      "active_current_a": { "name": "Current" },
+      "active_current_l1_a": { "name": "Current phase 1" },
+      "active_current_l2_a": { "name": "Current phase 2" },
+      "active_current_l3_a": { "name": "Current phase 3" },
+      "total_gas_m3": { "name": "Gas" },
+      "gas_timestamp": { "name": "Gas timestamp" },
+      "active_tariff": {
+        "name": "Active tariff",
+        "state": {
+          "1": "Tariff 1",
+          "2": "Tariff 2"
+        }
+      },
+      "wifi_strength": { "name": "Wi-Fi strength" },
+      "wifi_ssid": { "name": "Wi-Fi SSID" },
+      "meter_model": { "name": "Smart meter model" },
+      "smr_version": { "name": "DSMR version" }
+    },
+    "button": {
+      "identify": { "name": "Identify" }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "domain": "chargee",
+  "name": "Chargee P1",
+  "codeowners": ["@chargee-energy"],
+  "config_flow": true,
+  "documentation": "https://github.com/chargee-energy/chargee-homeassistant",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/chargee-energy/chargee-homeassistant/issues",
+  "loggers": ["custom_components.chargee"],
+  "requirements": [],
+  "version": "1.0.0",
+  "zeroconf": ["_chargee_p1._tcp.local."]
+}
